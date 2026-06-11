@@ -1,3 +1,15 @@
+<p align="center">
+  <img src="docs/banner.png" alt="Product Modelling — Cloning an Influencer" width="100%">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/license-MIT-2ea44f" alt="MIT License">
+  <img src="https://img.shields.io/badge/type-Claude%20Skill-c47c48" alt="Claude Skill">
+  <img src="https://img.shields.io/badge/python-3.x-3776ab" alt="Python 3">
+  <img src="https://img.shields.io/badge/ffmpeg-bundled-5aaaa0" alt="Bundled ffmpeg">
+  <img src="https://img.shields.io/badge/media-not%20included-555" alt="Tooling only">
+</p>
+
 # Product Modelling — Cloning an Influencer
 
 A reusable, **zero-install** pipeline (packaged as a Claude Code / Agent skill) for cloning a real
@@ -25,6 +37,8 @@ scripts/
 
 ## The pipeline (TL;DR)
 
+<p align="center"><img src="docs/pipeline.png" alt="Eight-step pipeline" width="100%"></p>
+
 1. **Extract frames** from the reference clip (bundled ffmpeg via `imageio_ffmpeg` — no system ffmpeg).
 2. **Pick the hero frame** (clean frontal / three-quarter / profile).
 3. **Build a character sheet** — written face spec + a labelled montage from the *real* frames.
@@ -37,6 +51,14 @@ scripts/
 ### The golden rule
 **Do not distort the face.** Anchor every generation to the real reference frames, and prefer
 real-frame edits when you can avoid AI-inventing a face at all.
+
+## The character sheet
+
+Step 3 produces a labelled reference sheet (built from *real* frames) plus a written face spec that
+becomes the prompt backbone for every later generation. Layout (placeholder silhouettes shown —
+no real likeness ships in this repo):
+
+<p align="center"><img src="docs/character-sheet-mock.png" alt="Character sheet layout (placeholders)" width="92%"></p>
 
 ## Requirements
 - Python 3 with `imageio`, `imageio-ffmpeg`, `Pillow` (`pip3 install --user imageio imageio-ffmpeg pillow`).

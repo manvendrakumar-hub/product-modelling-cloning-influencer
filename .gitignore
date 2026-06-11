@@ -14,6 +14,10 @@ Product/
 Minnie_*
 ref.*
 
+# ...except the original README graphics (generated, no real-person likeness)
+!docs/
+!docs/*.png
+
 # Python
 __pycache__/
 *.pyc
