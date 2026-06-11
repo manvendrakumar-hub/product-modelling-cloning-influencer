@@ -1,0 +1,20 @@
+# Never commit media / likeness / brand assets
+*.mp4
+*.mov
+*.webm
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.zip
+*.skill
+frames/
+clips/
+Product/
+Minnie_*
+ref.*
+
+# Python
+__pycache__/
+*.pyc
+.DS_Store
