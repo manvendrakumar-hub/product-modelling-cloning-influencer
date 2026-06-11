@@ -52,6 +52,13 @@ scripts/
 **Do not distort the face.** Anchor every generation to the real reference frames, and prefer
 real-frame edits when you can avoid AI-inventing a face at all.
 
+## Fast-cut montage (Step 8)
+
+`build_reel.py` hard-cuts clean takes into a punchy reel with punch-in "zoom" reframes — locally,
+zero credits. Synthetic, likeness-free preview of the style:
+
+<p align="center"><img src="docs/demo.gif" alt="Fast-cut montage demo (synthetic)" width="280"></p>
+
 ## The character sheet
 
 Step 3 produces a labelled reference sheet (built from *real* frames) plus a written face spec that

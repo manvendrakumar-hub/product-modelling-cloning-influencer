@@ -17,6 +17,7 @@ ref.*
 # ...except the original README graphics (generated, no real-person likeness)
 !docs/
 !docs/*.png
+!docs/*.gif
 
 # Python
 __pycache__/
